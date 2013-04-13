@@ -6,6 +6,7 @@ USAGE just an example
 ------------------------------------------
 
 //INCLUDE CLASS
+
 include(/PATH/TO/CacheInput.class.php');
 
 $cache = new CacheInput(/PATH/TO/YOUR/CACHE_DIRECTORY/FILE); //Example: $_SERVER["DOCUMENT_ROOT"] . '/cache/data.json'
