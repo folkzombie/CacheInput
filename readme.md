@@ -16,7 +16,7 @@ $cacheStatus = $cache->checkCache();
 
 if($cacheStatus === true) {
 	
-	$data = //get data, we need to cache
+	$data = //get the data we need to cache
 	
 	$cacheSearch->input = $data;
 	
