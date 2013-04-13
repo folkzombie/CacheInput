@@ -1,4 +1,6 @@
-Cache data...
+Cache data... 
+
+Disclaimer: only tested with ".txt" and ".json" files.
 
 USAGE just an example
 ------------------------------------------
