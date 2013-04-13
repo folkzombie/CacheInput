@@ -22,10 +22,10 @@ class CacheInput {
 	
 	///////////GENERATE THE CACHE FILE
 	public function generateCache() {
-		if (!$handle = fopen($this->the_file, 'w')) { return false; } //Cannot open file
-		if (fwrite($handle, $this->input) === FALSE) { return false; } //Cannot write to file
+		if (!$handle = fopen($this->the_file, 'w')) { return FALSE; } //Cannot open file
+		if (fwrite($handle, $this->input) === FALSE) { return FALSE; } //Cannot write to file
 		fclose($handle);
-		return true;
+		return TRUE;
 	}
 	
 	///////////CHECK THE CACHE FILE
@@ -33,9 +33,9 @@ class CacheInput {
 		$time_created = @filemtime($this->the_file);
 		$diff = time() - $this->cache_timeout; // check and see if file is older than a half a hour
 		if($time_created > $diff) {
-			return false; // use cache file
+			return FALSE; // use cache file
 		} else {
-			return true; // generate new file
+			return TRUE; // generate new file
 		}
 	}
 	
